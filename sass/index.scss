@@ -1,5 +1,13 @@
-@import './components/mobile-menu';
+@import './base/normalize';
+@import './base/reset';
 
+@import './utils/vars';
+@import './utils/mixins';
+
+@import './components/mobile-menu';
+@import './components/button';
+
+@import './layout/header';
 @import './layout/main';
 @import './layout/ux-ui';
 @import './layout/graphic';
