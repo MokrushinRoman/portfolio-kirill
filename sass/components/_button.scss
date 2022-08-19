@@ -1,0 +1,9 @@
+.button {
+  padding: 5.5px 19px;
+  border: transparent;
+  @include font(700, 7.4px, 1.2162, null);
+
+  background-color: #5f7adb;
+  color: var(--primary-text-color);
+  border-radius: 3.7px;
+}

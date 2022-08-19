@@ -241,6 +241,7 @@ summary {
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   color: var(--primary-text-color);
 }
 
@@ -290,10 +291,238 @@ address {
 :root {
   --main-bg-color: #26292b;
   --primary-text-color: #ffffff;
+  --primary-title-color: #5f7adb;
+  --accent-color: #5f7adb;
+  --primary-color: #ffffff;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section {
+  padding-top: 30px;
+  background-color: var(--main-bg-color);
+}
+
+.button {
+  padding: 5.5px 19px;
+  border: transparent;
+  font-weight: 700;
+  font-size: 7.4px;
+  line-height: 1.2162;
+  background-color: #5f7adb;
+  color: var(--primary-text-color);
+  border-radius: 3.7px;
+}
+
+.primary-title {
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--primary-title-color);
 }
 
 .header {
-  display: flex;
+  padding: 10px 20px;
   border-bottom: 1px solid #a2b2ee;
   background-color: var(--main-bg-color);
+}
+
+.header__container {
+  display: flex;
+}
+
+.connecting-container__burger-title {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu__icon {
+  position: relative;
+  display: block;
+  width: 23px;
+  height: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.mobile-menu__icon span,
+.mobile-menu__icon::before,
+.mobile-menu__icon::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+.mobile-menu__icon::before,
+.mobile-menu__icon::after {
+  content: "";
+}
+
+.mobile-menu__icon span {
+  top: 50%;
+  transform: translate(0px, -50%);
+}
+
+.mobile-menu__icon::before {
+  top: 0;
+}
+
+.mobile-menu__icon::after {
+  bottom: 0;
+}
+
+.header__contacts {
+  margin-left: auto;
+}
+
+.section__about-me {
+  font-family: "Nunito";
+}
+
+.my-photos__container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0px 35px;
+}
+
+.my-photos__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.my-photos__item:first-child {
+  width: 100%;
+}
+
+.my-photos__item {
+  width: calc((100% - 15px) / 2);
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.connections__container {
+  width: 100%;
+  margin-top: 40px;
+  padding: 17px 10px;
+  border: 1px solid #a2b2ee;
+  border-radius: 15px;
+}
+
+.connections__point + .connections__point {
+  margin-top: 10px;
+}
+
+.connections__top-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.05em;
+}
+
+.connections__text {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.3333;
+  letter-spacing: 0.05em;
+}
+
+.connections__text::before {
+  content: " ";
+  display: inline-block;
+  width: 22px;
+  height: 17px;
+  margin-right: 10px;
+  border-radius: 3px;
+  background-image: linear-gradient(#0057b8 51%, #ffd700 59%);
+}
+
+.connections__list {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.connections__item {
+  list-style: circle;
+}
+
+.connections__link {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.3333;
+  letter-spacing: 0.05em;
+  color: var(--primary-text-color);
+  transition: var(--transition);
+}
+
+.connections__link:hover,
+.connections__link:focus {
+  color: var(--accent-color);
+}
+
+.socials__list {
+  margin-top: 30px;
+}
+
+.socials__item {
+  display: flex;
+  align-items: center;
+}
+.socials__item + .socials__item {
+  margin-top: 20px;
+}
+
+.socials__item:hover .socials__icon,
+.socials__item:focus .socials__icon {
+  fill: var(--accent-color);
+}
+
+.socials__item:hover .socials__link,
+.socials__item:focus .socials__link {
+  color: var(--accent-color);
+}
+
+.socials__icon {
+  margin-right: 20px;
+  fill: var(--primary-color);
+  transition: var(--transition);
+}
+
+.socials__link {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.3333;
+  letter-spacing: 0.05em;
+  color: var(--primary-color);
+  transition: var(--transition);
 }/*# sourceMappingURL=index.css.map */

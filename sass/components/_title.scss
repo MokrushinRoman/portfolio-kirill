@@ -1,0 +1,5 @@
+.primary-title {
+  @include font(null, 15px, 1.2, 0.01em);
+
+  color: var(--primary-title-color);
+}

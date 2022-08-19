@@ -1,0 +1,129 @@
+// MY PHOTOS
+.section__about-me {
+  font-family: 'Nunito';
+}
+
+.my-photos__container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0px 35px;
+}
+
+.my-photos__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.my-photos__item:first-child {
+  width: 100%;
+}
+
+.my-photos__item {
+  width: calc((100% - 15px) / 2);
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+// CONNECTIONS
+
+.connections__container {
+  width: 100%;
+  margin-top: 40px;
+  padding: 17px 10px;
+  border: 1px solid #a2b2ee;
+  border-radius: 15px;
+}
+
+.connections__point {
+  .connections__point + & {
+    margin-top: 10px;
+  }
+}
+
+.connections__top-text {
+  @include font(400, 20px, 1.35, 00.05em);
+}
+
+.connections__text {
+  display: flex;
+  align-items: center;
+
+  @include font(300, 15px, 1.3333, 00.05em);
+}
+
+// Flag
+.connections__text::before {
+  content: ' ';
+
+  display: inline-block;
+  width: 22px;
+  height: 17px;
+  margin-right: 10px;
+  border-radius: 3px;
+
+  background-image: linear-gradient(#0057b8 51%, #ffd700 59%);
+}
+
+.connections__list {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.connections__item {
+  list-style: circle;
+}
+
+.connections__link {
+  @include font(300, 15px, 1.3333, 00.05em);
+
+  color: var(--primary-text-color);
+
+  transition: var(--transition);
+}
+
+.connections__link:hover,
+.connections__link:focus {
+  color: var(--accent-color);
+}
+
+// SOCIALS
+
+.socials__list {
+  margin-top: 30px;
+}
+
+.socials__item {
+  display: flex;
+  align-items: center;
+
+  .socials__item + & {
+    margin-top: 20px;
+  }
+}
+
+// hover + focus по li
+.socials__item:hover .socials__icon,
+.socials__item:focus .socials__icon {
+  fill: var(--accent-color);
+}
+.socials__item:hover .socials__link,
+.socials__item:focus .socials__link {
+  color: var(--accent-color);
+}
+
+.socials__icon {
+  margin-right: 20px;
+
+  fill: var(--primary-color);
+
+  transition: var(--transition);
+}
+
+.socials__link {
+  @include font(300, 15px, 1.3333, 00.05em);
+
+  color: var(--primary-color);
+
+  transition: var(--transition);
+}

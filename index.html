@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,17 +15,166 @@
   </head>
   <body>
     <header class="header">
-      <div class="connecting-container__burger-title">
-        <span class="mobile-menu__icon"> </span>
+      <div class="container header__container">
+        <div class="connecting-container__burger-title">
+          <div class="mobile-menu__icon">
+            <span></span>
+          </div>
 
-        <h1 class="primary-title">Обо мне</h1>
+          <h1 class="primary-title">Обо мне</h1>
+        </div>
+
+        <button class="button header__contacts" type="button">Contact</button>
       </div>
-
-      <button class="header__contacts" type="button"></button>
     </header>
 
     <main>
+      <!-- SIDEBAR -->
       <aside></aside>
+
+      <!--ABOUT ME-->
+
+      <!-- Photos -->
+      <section class="section section__about-me">
+        <div class="my-photos__container">
+          <h2 class=".primary-title visually-hidden">About me</h2>
+          <ul class="my-photos__list">
+            <li class="my-photos__item">
+              <img src="./images/my-photos/my-photo-1.jpg" alt="master photo" />
+            </li>
+            <li class="my-photos__item">
+              <img src="./images/my-photos/my-photo-2.jpg" alt="master photo" />
+            </li>
+            <li class="my-photos__item">
+              <img src="./images/my-photos/my-photo-3.jpg" alt="master photo" />
+            </li>
+          </ul>
+        </div>
+
+        <!-- Connections -->
+        <div class="container">
+          <div class="connections__container">
+            <p class="connections__top-text connections__point">Mokryshyn Kyryl</p>
+
+            <p class="connections__text connections__point">Ukraine, Kharkiv</p>
+
+            <ul class="connections__list connections__point">
+              <li class="connections__item">
+                <a href="" class="connections__link">Graphic designer</a>
+              </li>
+
+              <li class="connections__item">
+                <a href="" class="connections__link">Ui/Ux designer</a>
+              </li>
+
+              <li class="connections__item">
+                <a href="" class="connections__link">Google advertising</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Socials -->
+          <ul class="socials__list">
+            <li class="socials__item">
+              <svg class="socials__icon" width="45" height="38">
+                <use href="./images/icons/sprite.svg#icon-telegram"></use>
+              </svg>
+
+              <a class="socials__link" href="https://telegram.me/my_name_is_curly"
+                >my_name_is_curly</a
+              >
+            </li>
+
+            <li class="socials__item">
+              <svg class="socials__icon" width="45" height="38">
+                <use href="./images/icons/sprite.svg#icon-instagram"></use>
+              </svg>
+
+              <a class="socials__link" href="https://instagram.com/i.curly.design"
+                >i.curly.design</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ABOUT WORK -->
+      <section class="section section__about-work" lang="ru">
+        <div class="container">
+          <h2 class="primary-title visually-hidden">About my work. Or what can I do for You</h2>
+          <div class="subcontainer conditions">
+            <b class="conditions__top-text">
+              Привет, я занимаюсь <span lang="en">ui/ux</span> дизайном, графическим дизайном и
+              контекстной рекламой
+            </b>
+
+            <ul class="conditions__list">
+              <li class="conditions__item"></li>
+
+              <li class="conditions__item"></li>
+
+              <li class="conditions__item"></li>
+
+              <li class="conditions__item"></li>
+
+              <li class="conditions__item"></li>
+            </ul>
+          </div>
+          <div class="subcontainer"></div>
+          <div class="subcontainer"></div>
+        </div>
+      </section>
+
+      <footer class="footer"></footer>
     </main>
   </body>
 </html>
+
+<!-- 
+Привет, я занимаюсь ui/ux дизайном, графическим дизайном и контекстной рекламой
+
+Берусь за проект только если готов сразу приступить
+Слежу за всеми изменениями и новостями google рекламы
+Слежу за мировыми трендами дизайна сайтов, приложений, лендингов
+Слежу за мировыми трендами дизайна баннеров, логотипов, соц сетей, полиграфии
+Быстро изучаю суть проекта, аудиторию, конкуренцию
+
+
+3 основные программы для дизайна
+ - Figma
+ - Adobe Illustration
+ - Adobe Photoshop
+
+
+Цена настройки Google Shopping - 1500грн (+1мес ведения в подарок)
+Цена ведения Google Shopping - 750грн/мес
+
+В настройку Google Shopping входит:
+Подбор ключевых слов
+подбор минус слов
+написание объявлений
+таргетинговые настройки
+настройка целей
+настройка ремаркетинга
+настройка аналитики
+настройка кампании
+В ведение Google Shopping входит:
+добавление ключевых слов
+подключение пуш уведомлений
+добавление минус слов
+обновление объявлений
+работа с аналитикой
+работа с целями
+план работ на следующий месяц
+отчет об эффективности рекламной кампании
+Напишите пожалуйста как можно подробнее проект, чтоб лучше сформировать техническое задание. Пример
+Какая услуга интересует
+Сроки выполнения
+Пожелания по проекту
+В идеале пример желаемого результата
+
+График работы:
+Пн-пт: 9-18:00
+Сб-вс: выходной
+(Если срочный проект, могу работать на выходных)
+ -->
